@@ -48,7 +48,7 @@ export const AlgoExpertTable = async () => {
                                             xmlns="http://www.w3.org/2000/svg"
                                             viewBox="0 0 24 24"
                                             fill="currentColor"
-                                            className="fill-yellow-500 w-6 h-6"
+                                            className="fill-slate-500 w-6 h-6"
                                         >
                                             <path
                                                 fillRule="evenodd"
@@ -64,7 +64,7 @@ export const AlgoExpertTable = async () => {
                                     )}
                                 </td>
                                 <td className="py-3 space-y-1">
-                                    <p className="font-medium leading-none">
+                                    <p className="text-sm md:text-base font-medium leading-none">
                                         {problem.title}
                                     </p>
                                 </td>
@@ -86,7 +86,7 @@ export const AlgoExpertTable = async () => {
                                         </Link>
                                     </div>
                                 </td>
-                                <td className="py-3 space-x-4">
+                                <td className="py-3 hidden md:table-cell space-x-4">
                                     <div className="space-y-1">
                                         <Link
                                             href={problem.solutionURL}
@@ -107,7 +107,7 @@ export const AlgoExpertTable = async () => {
                                         </Link>
                                     </div>
                                 </td>
-                                <td className="py-3 space-y-1">
+                                <td className="py-3 px-3 hidden md:table-cell space-y-1">
                                     <p
                                         className={clsx(
                                             "p-1 text-xs rounded leading-none w-fit capitalize",
@@ -127,7 +127,7 @@ export const AlgoExpertTable = async () => {
                                         {problem.difficulty.toLocaleLowerCase()}
                                     </p>
                                 </td>
-                                <td className="py-3 space-y-1">
+                                <td className="hidden md:table-cell py-3 space-y-1">
                                     <div className="flex items-center">
                                         {problem.patternList.map((p) => (
                                             <p
@@ -139,7 +139,7 @@ export const AlgoExpertTable = async () => {
                                         ))}
                                     </div>
                                 </td>
-                                <td className="py-3 space-y-1">
+                                <td className="hidden md:table-cell py-3 space-y-1">
                                     {problem.popularity === "HIGH" ? (
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +181,7 @@ export const AlgoExpertTable = async () => {
                                         </svg>
                                     )}
                                 </td>
-                                <td className="px-3 text-sm text-gray-500">
+                                <td className="hidden md:table-cell px-3 text-sm text-gray-500">
                                     {timeAgo(problem.updatedAt)}
                                 </td>
                                 <td className="px-3 py-3">
