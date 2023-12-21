@@ -3323,27 +3323,28 @@ const algoExpertProblems = [
 ];
 
 async function main() {
-    const leetResponse = await Promise.all(
+    await Promise.all(
         leetcodeProblems.map(
             async (problem) =>
-                await prisma.leetcodeProblems.create({
-                    data: problem,
+                await prisma.leetcodeProblems.upsert({
+                    where: { questionURL: problem.questionURL },
+                    update: {},
+                    create: problem,
                 })
         )
     );
-    console.log(leetResponse);
 
-    const algoResponse = await Promise.all(
+    await Promise.all(
         algoExpertProblems.map(
             async (problem) =>
-                await prisma.algoExpertProblems.create({
-                    data: problem,
+                await prisma.algoExpertProblems.upsert({
+                    where: { questionURL: problem.questionURL },
+                    update: {},
+                    create: problem,
                 })
         )
     );
-    console.log(algoResponse);
 }
-
 
 main()
     .then(async () => {
