@@ -69,6 +69,8 @@ export const LeetcodeTable = async () => {
                                 <div className="space-y-1">
                                     <Link
                                         href={problem.questionURL}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
                                     >
                                         <svg
@@ -87,6 +89,8 @@ export const LeetcodeTable = async () => {
                                 <div className="space-y-1">
                                     <Link
                                         href={problem.solutionURL}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
                                     >
                                         <svg
