@@ -2,8 +2,8 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 
 export const metadata = {
-    metadataBase: new URL("https://postgres-prisma.vercel.app"),
-    title: "Abhijit Rao - 2024 Prep",
+    metadataBase: new URL("https://2024-prep.vercel.app/"),
+    title: "Abhijit Rao - Grind",
     description: "2024 Prep with Postgres and Prisma",
 };
 

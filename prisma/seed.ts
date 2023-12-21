@@ -1,4 +1,3 @@
-import { Prisma } from "@prisma/client";
 import prisma from "../lib/prisma";
 
 export const Popularity: { [x: string]: "HIGH" | "MEDIUM" | "LOW" } = {

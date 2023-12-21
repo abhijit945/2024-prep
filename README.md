@@ -4,7 +4,7 @@ Simple NextJS Problems Tracker with Postgres, Prisma ORM, Deployed in Vercel
 
 ## Demo
 
-https://postgres-prisma.vercel.app/
+https://2024-prep.vercel.app/
 
 ## How to Use
 
